@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#1e3040"/><stop offset="1" stop-color="#101924"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#d7b56a" stop-opacity=".12"/><stop offset="1" stop-color="#111b25" stop-opacity="0"/></linearGradient>
+    <pattern id="windows" width="22" height="28" patternUnits="userSpaceOnUse"><path d="M8 7h3v9H8z" fill="#dfc58c" opacity=".26"/></pattern>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v1000H0z"/>
+  <circle cx="1230" cy="260" r="240" stroke="#d8b367" stroke-opacity=".10"/>
+  <circle cx="1230" cy="260" r="290" stroke="#d8b367" stroke-opacity=".06"/>
+  <path d="m0 737 1600-70v333H0z" fill="url(#water)"/>
+  <g fill="#17232e" stroke="#b4bbaf" stroke-opacity=".17">
+    <path d="M300 704V530h56v-37h56v211zM418 704V443h64v-22h52v283zM545 704V492h73v212zM625 704V387h98v317zM735 704V515h64v-28h48v217zM858 704V340h88v364zM961 704V464h67v-28h37v268zM1081 704V308h91v396zM1187 704V449h85v255zM1284 704V390h98v314zM1394 704V503h79v201zM1486 704V464h114v240z"/>
+    <path d="m652 387 22-49v-34h7v34l22 49zM674 304v-34M1110 308v-53h7v-26h8v26h26v53M1295 390v-52h10v-29h10v29h10v-52h12v52h10v-29h10v29h10v52"/>
+  </g>
+  <g fill="url(#windows)" opacity=".5">
+    <path d="M420 449h110v255H420zM630 395h86v309h-86zM864 347h76v357h-76zM1087 315h79v389h-79zM1290 396h85v308h-85z"/>
+  </g>
+  <g stroke="#cfaa5f" stroke-linecap="round">
+    <path d="M-100 861 1700 677" stroke-width="10" opacity=".45"/>
+    <path d="M590 821V514m20 305V512m540 246V452m20 304V450" stroke-width="5" opacity=".48"/>
+    <path d="M-40 593q320 265 640-80 285 347 560-62 290 235 540-118" stroke-width="3" opacity=".38"/>
+    <path d="M50 628v217m100-171v161m100-134v124m100-128v118m100-156v146m100-221v211m100-215v205m100-141v131m100-115v105m100-139v129m100-211v201m100-294v284m100-214v204m100-167v157m100-170v160m100-225v215" opacity=".22"/>
+  </g>
+  <g stroke="#d8c18e" stroke-opacity=".1"><path d="M820 860h390M940 890h450M660 925h510M1110 945h360M340 965h640"/></g>
+</svg>
