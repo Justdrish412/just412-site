@@ -47,7 +47,7 @@ filterButtons.forEach((button) => {
     filterButtons.forEach((item) => {
       item.setAttribute('aria-pressed', String(item === button));
     });
-    filterStatus.textContent = `${visibleCount} collection concept${visibleCount === 1 ? '' : 's'} shown.`;
+    filterStatus.textContent = `${visibleCount} collection item${visibleCount === 1 ? '' : 's'} shown.`;
   });
 });
 

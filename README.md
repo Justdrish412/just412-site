@@ -11,27 +11,30 @@ cd /workspace/just412-site
 python3 -m http.server 8012 --bind 127.0.0.1
 ```
 
-Stop the server with Ctrl+C. All page assets are local; opening `index.html` directly also lets you view the page. JavaScript enhances the mobile menu and concept filters. Navigation, store links, all concepts, and the expandable brand note remain available without JavaScript.
+Stop the server with Ctrl+C. All page assets are local; opening `index.html` directly also lets you view the page. JavaScript enhances the mobile menu and collection filters. Navigation, store and product links, all collection items, and the expandable brand note remain available without JavaScript.
 
 ## Fourthwall
 
 The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, available products, prices, shipping, and order management live in that Fourthwall store.
 
-The three homepage product illustrations are explicitly labeled **collection concepts**, not live inventory. No products, prices, reviews, stock counts, or order functionality are fabricated. To feature real listings, replace each concept with the actual product image, name, and Fourthwall product URL after it is created in Fourthwall.
+The **Just412 Grind by Grace Hoodie** uses the supplied product photo and links directly to **https://just412-shop.fourthwall.com/products/just412-grind-by-grace-hoodie** from its photo, name, and “Shop this hoodie” button. Options, current prices, availability, and checkout remain in Fourthwall; the website does not synchronize inventory or display an unverified price.
+
+The tee and art print remain clearly labeled **design concepts**. To feature another real listing, supply its product image, name, and direct Fourthwall URL. No products, prices, reviews, stock counts, or checkout functionality are fabricated.
 
 To change the store address, replace `https://just412-shop.fourthwall.com/` in `index.html`. Keeping real href attributes makes the shop links work without JavaScript. The website never asks for a Fourthwall password or payment credentials.
 
 ## Files and design assets
 
-- `index.html`: brand copy, concept collection, story, creative note, and store links.
+- `index.html`: brand copy, hoodie listing, collection concepts, story, creative note, and store links.
 - `styles.css`: responsive layouts, local typography, and black-and-gold styling.
-- `script.js`: accessible mobile navigation, concept filters, and copyright year.
+- `script.js`: accessible mobile navigation, collection filters, and copyright year.
+- `assets/grind-by-grace-hoodie.jpg`: the user-supplied product photo, copied unchanged.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
 - `assets/fonts/`: local Anton and DM Sans fonts, licenses, and source notes.
 - `favicon.svg`: a small matching 412 browser icon.
 
-The product illustrations are design mockups built from inline SVG and HTML/CSS. The original logo is used on the cream tee concept. The artwork and wording are proposals for review, rather than claims that these products have been manufactured or listed.
+The tee and art-print illustrations are design mockups built from inline SVG and HTML/CSS. The original logo is used on the cream tee concept. These two concepts are proposals for review, rather than claims that they have been manufactured or listed. The hoodie photo and product link were supplied by the user.
 
 The earlier personal website was preserved at `/workspace/scratch/justin-drish-personal-site` for possible future use on a separate personal domain.
 
