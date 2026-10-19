@@ -15,9 +15,11 @@ Stop the server with Ctrl+C. All page assets are local; opening `index.html` dir
 
 ## Pages
 
-`index.html` is the merchandise and creative home page. `about.html` is a separate About Us page, linked from the main navigation, hero, and footer. It includes Justin’s bio and previously supplied portrait, his account of coming out of addiction fifteen years ago by the grace of God, a family introduction, and the personal meaning behind Just412. Links on About Us lead back to the home page’s collection and creative sections.
+`index.html` is the merchandise and creative home page. `about.html` is a separate About Us page, linked from the main navigation, hero, and footer. It includes Justin’s approved first-person story and previously supplied portrait, the connection between 4:12 and Acts 4:12, his family, ministry, and the purpose behind Just412. Links on About Us lead back to the home page’s collection and creative sections.
 
-The family introduction uses the facts Justin supplied: he is a husband and father of three children. Individual family names, ages, and additional biographies can be added when supplied. The recovery copy does not invent a substance, treatment history, dates, or family details. The shared JavaScript skips collection filters on the About Us page while keeping its mobile navigation usable.
+Justin approved the wording before publication. His account describes heroin addiction, entering Adult & Teen Challenge fifteen years ago, coming to faith in Jesus Christ, and the significance of Acts 4:12. It names his wife Courtney and children Hannah, Solomon, and Valentino, and describes his church ministry and current work. The story ends with “Grind by Grace,” followed by “Justin” on the next line. Keep this approved testimony intact unless Justin requests an edit. The shared JavaScript skips collection filters on the About Us page while keeping its mobile navigation usable.
+
+Future addition: a user-supplied family photo beside the family bio.
 
 ## Fourthwall
 

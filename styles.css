@@ -208,6 +208,7 @@ h1 span { color: var(--gold-light); }
 .recovery-copy > p { margin: 0 0 24px; color: #c9cfbf; font-size: 14px; line-height: 1.95; }
 .recovery-copy > p.about-lead { color: var(--paper); font-size: 21px; line-height: 1.7; }
 .grace-quote { margin: 34px 0 0; padding-left: 22px; border-left: 2px solid var(--gold); }
+.grace-quote + p { margin-top: 28px; }
 .grace-quote p { margin: 0 0 15px; font-size: 24px; font-weight: 450; line-height: 1.5; letter-spacing: -.4px; }
 .grace-quote cite { color: #d4be7c; font-size: 9px; font-style: normal; line-height: 1.8; letter-spacing: 1.5px; text-transform: uppercase; }
 .family-section { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); align-items: center; gap: 90px; }
@@ -217,6 +218,7 @@ h1 span { color: var(--gold-light); }
 .family-card-main { margin: 0; font-family: var(--display); font-size: clamp(44px, 4.5vw, 62px); line-height: 1.08; }
 .family-card-main > span { color: #956b18; }
 .family-card-foot { margin: 32px 0 0; padding-top: 22px; border-top: 1px solid #c4b899; font-size: 11px; line-height: 1.8; }
+.family-copy .text-link { margin-top: 22px; font-size: 11px; }
 .brand-story-section { background: #e8e3d6; }
 .brand-story-inner { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 100px; align-items: center; }
 .brand-story-inner h2 { font-size: clamp(40px, 4.3vw, 60px); }
