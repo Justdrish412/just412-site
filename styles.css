@@ -124,7 +124,7 @@ h1 span { color: var(--gold-light); }
 .product-card:hover .art-frame { transform: rotate(2deg) translateY(-3px); }
 .art-sheet { display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 16px; background: #efe5d2; }
 .art-kicker { font-size: 1.6cqw; line-height: 1.8; letter-spacing: 1px; text-transform: uppercase; }
-.art-message { font-family: var(--display); font-size: 16cqw; line-height: 1.05; letter-spacing: -.5px; }
+.art-message { font-family: var(--display); font-size: 14cqw; line-height: 1.05; letter-spacing: -.5px; }
 .art-message > span { color: #9f731a; }
 .art-foot { font-size: 1.6cqw; line-height: 1.9; }
 .product-caption { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding-top: 20px; }
