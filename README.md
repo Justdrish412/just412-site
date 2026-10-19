@@ -21,6 +21,8 @@ Justin approved the wording before publication. His account describes heroin add
 
 Future addition: a user-supplied family photo beside the family bio.
 
+Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser setting) and 1.8 line spacing on desktop and mobile. About Us body copy uses strong contrast, and mobile rules do not shrink the approved story’s paragraphs.
+
 ## Fourthwall
 
 The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, available products, prices, shipping, and order management live in that Fourthwall store.
