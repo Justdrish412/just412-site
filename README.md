@@ -13,6 +13,12 @@ python3 -m http.server 8012 --bind 127.0.0.1
 
 Stop the server with Ctrl+C. All page assets are local; opening `index.html` directly also lets you view the page. JavaScript enhances the mobile menu and collection filters. Navigation, store and product links, all collection items, and the expandable brand note remain available without JavaScript.
 
+## Pages
+
+`index.html` is the merchandise and creative home page. `about.html` is a separate About Us page, linked from the main navigation, hero, and footer. It includes Justin’s bio and previously supplied portrait, his account of coming out of addiction fifteen years ago by the grace of God, a family introduction, and the personal meaning behind Just412. Links on About Us lead back to the home page’s collection and creative sections.
+
+The family introduction uses the facts Justin supplied: he is a husband and father of three children. Individual family names, ages, and additional biographies can be added when supplied. The recovery copy does not invent a substance, treatment history, dates, or family details. The shared JavaScript skips collection filters on the About Us page while keeping its mobile navigation usable.
+
 ## Fourthwall
 
 The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, available products, prices, shipping, and order management live in that Fourthwall store.
@@ -21,14 +27,16 @@ The **Just412 Grind by Grace Hoodie** uses the supplied product photo and links 
 
 The tee and art print remain clearly labeled **design concepts**. To feature another real listing, supply its product image, name, and direct Fourthwall URL. No products, prices, reviews, stock counts, or checkout functionality are fabricated.
 
-To change the store address, replace `https://just412-shop.fourthwall.com/` in `index.html`. Keeping real href attributes makes the shop links work without JavaScript. The website never asks for a Fourthwall password or payment credentials.
+To change the store address, replace `https://just412-shop.fourthwall.com/` in `index.html` and `about.html`. Keeping real href attributes makes the shop links work without JavaScript. The website never asks for a Fourthwall password or payment credentials.
 
 ## Files and design assets
 
-- `index.html`: brand copy, hoodie listing, collection concepts, story, creative note, and store links.
+- `index.html`: hoodie listing, collection concepts, creative note, links to About Us, and store links.
+- `about.html`: Justin’s bio, recovery story, family introduction, and the meaning behind the brand.
 - `styles.css`: responsive layouts, local typography, and black-and-gold styling.
 - `script.js`: accessible mobile navigation, collection filters, and copyright year.
 - `assets/grind-by-grace-hoodie.jpg`: the user-supplied product photo, copied unchanged.
+- `assets/justin-drish.png`: the previously supplied portrait, reused unchanged from the personal-site backup.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
 - `assets/fonts/`: local Anton and DM Sans fonts, licenses, and source notes.

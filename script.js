@@ -31,24 +31,26 @@ document.addEventListener('keydown', (event) => {
 mobileLayout.addEventListener('change', () => closeMenu());
 
 const filterGroup = document.querySelector('.collection-filters');
-const filterButtons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
-const productCards = Array.from(document.querySelectorAll('.product-card'));
-const filterStatus = document.querySelector('#filter-status');
-filterGroup.hidden = false;
+if (filterGroup) {
+  const filterButtons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
+  const productCards = Array.from(document.querySelectorAll('.product-card'));
+  const filterStatus = document.querySelector('#filter-status');
+  filterGroup.hidden = false;
 
-filterButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const category = button.dataset.filter;
-    let visibleCount = 0;
-    productCards.forEach((card) => {
-      card.hidden = category !== 'all' && card.dataset.category !== category;
-      if (!card.hidden) visibleCount += 1;
+  filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.filter;
+      let visibleCount = 0;
+      productCards.forEach((card) => {
+        card.hidden = category !== 'all' && card.dataset.category !== category;
+        if (!card.hidden) visibleCount += 1;
+      });
+      filterButtons.forEach((item) => {
+        item.setAttribute('aria-pressed', String(item === button));
+      });
+      filterStatus.textContent = `${visibleCount} collection item${visibleCount === 1 ? '' : 's'} shown.`;
     });
-    filterButtons.forEach((item) => {
-      item.setAttribute('aria-pressed', String(item === button));
-    });
-    filterStatus.textContent = `${visibleCount} collection item${visibleCount === 1 ? '' : 's'} shown.`;
   });
-});
+}
 
 document.querySelector('#year').textContent = String(new Date().getFullYear());
