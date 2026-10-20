@@ -19,6 +19,8 @@ Stop the server with Ctrl+C. All page assets are local; opening `index.html` dir
 
 Justin approved the wording before publication. His account describes heroin addiction, entering Adult & Teen Challenge fifteen years ago, coming to faith in Jesus Christ, and the significance of Acts 4:12. It names his wife Courtney and children Hannah, Solomon, and Valentino, and describes his church ministry and current work. The story ends with “Grind by Grace,” followed by “Justin” on the next line. Keep this approved testimony intact unless Justin requests an edit. The shared JavaScript skips collection filters on the About Us page while keeping its mobile navigation usable.
 
+Acts 4:12 is introduced as one of the first Bible verses God drew Justin’s attention to. Justin requested removal of the clock anecdote and references to the number repeatedly appearing.
+
 Future addition: a user-supplied family photo beside the family bio.
 
 Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser setting) and 1.8 line spacing on desktop and mobile. About Us body copy uses strong contrast, and mobile rules do not shrink the approved story’s paragraphs.
