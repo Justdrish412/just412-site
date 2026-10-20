@@ -21,7 +21,7 @@ Justin approved the wording before publication. His account describes heroin add
 
 Acts 4:12 is introduced as one of the first Bible verses God drew Justin’s attention to. Justin requested removal of the clock anecdote and references to the number repeatedly appearing.
 
-The story ends with Justin’s requested invitation: “If you’re in a place where that feels hard to believe, take it from me: I’ve been there, and it was there that God met me.” A “Find help with addiction” button leads to a help section linking to **https://www.paatc.org**, supplied by Justin for Western PA Adult & Teen Challenge. The separate Naaman Network website address has not been supplied or verified, so its link is pending. The page does not collect personal or treatment information.
+The story ends with Justin’s requested invitation: “If you’re in a place where that feels hard to believe, take it from me: I’ve been there, and it was there that God met me.” A “Find help with addiction” button leads to a help section linking to **https://www.paatc.org** for Western PA Adult & Teen Challenge and **https://naamannet.org** for Naaman Network. Justin supplied both website addresses. The page does not collect personal or treatment information.
 
 Future addition: a user-supplied family photo beside the family bio.
 
