@@ -15,7 +15,7 @@ Stop the server with Ctrl+C. All page assets are local; opening `index.html` dir
 
 ## Pages
 
-`index.html` is the merchandise and creative home page. `about.html` is a separate About Us page, linked from the main navigation, hero, and footer. It includes Justin’s approved first-person story and previously supplied portrait, the connection between 4:12 and Acts 4:12, his family, ministry, and the purpose behind Just412. Links on About Us lead back to the home page’s collection and creative sections.
+`index.html` is the merchandise and creative home page. `about.html` is a separate About Us page, linked from the main navigation, hero, and footer. It includes Justin’s approved first-person story and his supplied black-and-white Pittsburgh portrait, the connection between 4:12 and Acts 4:12, his family, ministry, and the purpose behind Just412. Links on About Us lead back to the home page’s collection and creative sections.
 
 Justin approved the wording before publication. His account describes heroin addiction, entering Adult & Teen Challenge fifteen years ago, coming to faith in Jesus Christ, and the significance of Acts 4:12. It names his wife Courtney and children Hannah, Solomon, and Valentino, and describes his church ministry and current work. The story ends with “Grind by Grace,” followed by “Justin” on the next line. Keep this approved testimony intact unless Justin requests an edit. The shared JavaScript skips collection filters on the About Us page while keeping its mobile navigation usable.
 
@@ -42,7 +42,7 @@ To change the store address, replace `https://just412-shop.fourthwall.com/` in `
 - `styles.css`: responsive layouts, local typography, and black-and-gold styling.
 - `script.js`: accessible mobile navigation, collection filters, and copyright year.
 - `assets/grind-by-grace-hoodie.jpg`: the user-supplied product photo, copied unchanged.
-- `assets/justin-drish.png`: the previously supplied portrait, reused unchanged from the personal-site backup.
+- `assets/justin-drish-pittsburgh.jpg`: the user-supplied black-and-white portrait in a Grind By Grace hoodie, copied unchanged and shown at its full proportions on the About Us page.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
 - `assets/fonts/`: local Anton and DM Sans fonts, licenses, and source notes.
