@@ -492,8 +492,21 @@ h1 span { color: var(--gold-light); }
           <div class="brand-story-copy">
             <p>Through Just412, I want to share that hope with others and create products that draw our attention away from ourselves and toward Christ. No matter how far someone has fallen, I want them to know that there is redemption, there is meaning, and there is hope. If you’re in a place where that feels hard to believe, take it from me: I’ve been there, and it was there that God met me.</p>
             <p class="story-signoff">Grind by Grace,<br>Justin</p>
-            <a class="button button-dark" href="just412-preview.html#collection" data-preview-page="just412-preview.html#collection">Explore Just412 <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+            <a class="button button-dark" href="#find-help">Find help with addiction <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a>
           </div>
+        </div>
+      </section>
+      <section class="addiction-help section-pad wrap" id="find-help" aria-labelledby="help-title">
+        <div class="help-heading">
+          <p class="eyebrow">05 / A place to start</p>
+          <h2 id="help-title">LOOKING FOR HELP<br>WITH <span>ADDICTION?</span></h2>
+          <p class="help-intro">If you or someone you love needs help with addiction, visit Adult &amp; Teen Challenge to learn more about their programs and how to reach their team.</p>
+        </div>
+        <div class="help-links">
+          <a class="help-card" data-help-link href="https://www.paatc.org">
+            <h3>Western PA Adult &amp; Teen Challenge</h3>
+            <span>Visit the website <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></span>
+          </a>
         </div>
       </section>
     </main>
@@ -568,7 +581,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=hope-and-help';
+    target.search = '?v=paatc-help';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {

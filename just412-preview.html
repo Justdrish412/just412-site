@@ -599,7 +599,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=hope-and-help';
+    target.search = '?v=paatc-help';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {
