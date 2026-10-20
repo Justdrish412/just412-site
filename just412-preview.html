@@ -238,6 +238,13 @@ h1 span { color: var(--gold-light); }
 .brand-story-inner { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 100px; align-items: center; }
 .brand-story-inner h2 { font-size: clamp(40px, 4.3vw, 60px); }
 .brand-story-copy > p { margin: 0 0 28px; font-size: var(--reading-size); line-height: var(--reading-leading); }
+.help-heading h2 > span { color: #956b18; }
+.help-intro { max-width: 760px; margin: 28px 0 0; font-size: var(--reading-size); line-height: var(--reading-leading); }
+.help-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.help-card { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; min-width: 0; min-height: 190px; padding: 30px; border: 1px solid #c9bfa9; background: #fffdf7; transition: background-color .2s, border-color .2s; }
+.help-card:hover { border-color: #8a6519; background: #f0e7d1; }
+.help-card h3 { margin: 0; font-size: var(--reading-size); font-weight: 650; line-height: 1.5; }
+.help-card > span { display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 16px; line-height: 1.8; }
 
 @media (min-width: 1600px) {
   .hero-content { min-height: 760px; }
@@ -373,6 +380,8 @@ h1 span { color: var(--gold-light); }
   .grace-quote p { font-size: 23px; }
   .family-card { padding: 30px; }
   .family-card-main { font-size: 48px; }
+  .help-links { grid-template-columns: 1fr; gap: 18px; margin-top: 28px; }
+  .help-card { min-height: 170px; padding: 24px; }
 }
 @media (max-width: 360px) {
   .wrap { width: calc(100% - 36px); }
@@ -590,7 +599,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=pittsburgh-photo';
+    target.search = '?v=hope-and-help';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {
