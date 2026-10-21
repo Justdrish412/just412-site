@@ -121,7 +121,7 @@ h1 span { color: var(--gold-light); }
 .collection-filters button { min-height: 44px; padding: 10px 16px; border: 1px solid transparent; background: transparent; color: var(--muted); font-size: 11px; cursor: pointer; }
 .collection-filters button[aria-pressed="true"] { border-color: var(--ink); color: var(--ink); }
 .collection-filters button:hover { background: #e8e3d7; }
-.product-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; }
+.product-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px; }
 .product-card { min-width: 0; }
 .product-visual { position: relative; isolation: isolate; overflow: hidden; aspect-ratio: 400 / 440; border: 1px solid #dbd5c9; container-type: inline-size; }
 .tee-visual { background: radial-gradient(ellipse at 50% 40%, #eee8dc, #d7d2c6); }
@@ -131,10 +131,6 @@ h1 span { color: var(--gold-light); }
 .product-photo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
 .product-caption h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .product-shop { margin-top: 20px; gap: 18px; font-size: 11px; }
-.product-release { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 28px; border: 1px solid #dbd5c9; background: #eee8dc; }
-.product-release h3 { margin: 0; font-size: 22px; font-weight: 600; line-height: 1.5; }
-.product-release h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
-.product-release .button { flex-shrink: 0; }
 .garment { position: absolute; inset: 5px 0 -2px; transition: transform .35s; }
 .garment-shape { display: block; width: 100%; height: 100%; filter: drop-shadow(0 10px 6px #1719160d); }
 .product-card:hover .garment { transform: translateY(-5px); }
@@ -343,7 +339,6 @@ h1 span { color: var(--gold-light); }
   .collection-filters { gap: 8px; }
   .collection-filters button { min-height: 40px; padding-inline: 18px; font-size: 10px; }
   .product-grid { grid-template-columns: 1fr; gap: 32px; }
-  .product-release { flex-direction: column; align-items: flex-start; gap: 22px; padding: 24px; }
   .product-visual { aspect-ratio: 400 / 420; }
   .product-caption { padding-top: 17px; }
   .product-type { font-size: 8px; }
@@ -586,7 +581,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=same-hustle';
+    target.search = '?v=same-hustle-photo';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {
