@@ -131,6 +131,10 @@ h1 span { color: var(--gold-light); }
 .product-photo { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
 .product-caption h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .product-shop { margin-top: 20px; gap: 18px; font-size: 11px; }
+.product-release { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 28px; border: 1px solid #dbd5c9; background: #eee8dc; }
+.product-release h3 { margin: 0; font-size: 22px; font-weight: 600; line-height: 1.5; }
+.product-release h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.product-release .button { flex-shrink: 0; }
 .garment { position: absolute; inset: 5px 0 -2px; transition: transform .35s; }
 .garment-shape { display: block; width: 100%; height: 100%; filter: drop-shadow(0 10px 6px #1719160d); }
 .product-card:hover .garment { transform: translateY(-5px); }
@@ -339,6 +343,7 @@ h1 span { color: var(--gold-light); }
   .collection-filters { gap: 8px; }
   .collection-filters button { min-height: 40px; padding-inline: 18px; font-size: 10px; }
   .product-grid { grid-template-columns: 1fr; gap: 32px; }
+  .product-release { flex-direction: column; align-items: flex-start; gap: 22px; padding: 24px; }
   .product-visual { aspect-ratio: 400 / 420; }
   .product-caption { padding-top: 17px; }
   .product-type { font-size: 8px; }
@@ -462,10 +467,10 @@ h1 span { color: var(--gold-light); }
       <section class="collection-section section-pad wrap" id="collection" aria-labelledby="collection-title">
         <div class="section-heading">
           <div><p class="eyebrow">01 / The first chapter</p><h2 id="collection-title">WEAR YOUR<br>NEXT CHAPTER.</h2></div>
-          <div class="collection-intro"><p>Start with the Grind by Grace hoodie. A personal reminder to carry with you, with more ideas taking shape.</p><a class="text-link" data-store-link href="https://just412-shop.fourthwall.com/">See what’s in the shop <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
+          <div class="collection-intro"><p>Explore Grind by Grace and Same Hustle, Different Weight. Personal reminders to carry with you, with more ideas taking shape.</p><a class="text-link" data-store-link href="https://just412-shop.fourthwall.com/">See what’s in the shop <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
         </div>
         <div class="collection-toolbar">
-          <p class="concept-notice"><span aria-hidden="true"></span> Shop the hoodie and explore collection concepts.</p>
+          <p class="concept-notice"><span aria-hidden="true"></span> Shop the hoodies and explore collection concepts.</p>
           <div class="collection-filters" role="group" aria-label="Filter the collection" hidden>
             <button type="button" data-filter="all" aria-pressed="true">All</button>
             <button type="button" data-filter="wear" aria-pressed="false">Apparel</button>
@@ -505,8 +510,15 @@ h1 span { color: var(--gold-light); }
             </div>
             <div class="product-caption"><div><p class="product-type">The studio / Art</p><h3>The Comeback Print</h3></div><span class="product-number" aria-hidden="true">03</span></div>
           </article>
+          <article class="product-card product-release" data-category="wear" id="same-hustle-different-weight" aria-labelledby="same-hustle-title">
+            <div>
+              <p class="product-type">In the shop / Apparel</p>
+              <h3 id="same-hustle-title"><a data-product-link href="https://just412-shop.fourthwall.com/products/same-hustle-different-weight">Same Hustle, Different Weight</a></h3>
+            </div>
+            <a class="button button-dark" data-product-link href="https://just412-shop.fourthwall.com/products/same-hustle-different-weight">Shop this hoodie <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a>
+          </article>
         </div>
-        <div class="shop-note" id="shop-status"><p>Shop the hoodie on Fourthwall for options, current pricing, and checkout. The tee and art print are design concepts.</p><a class="button button-dark" data-store-link href="https://just412-shop.fourthwall.com/">Visit the Fourthwall store <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
+        <div class="shop-note" id="shop-status"><p>Shop the hoodies on Fourthwall for options, current pricing, and checkout. The tee and art print are design concepts.</p><a class="button button-dark" data-store-link href="https://just412-shop.fourthwall.com/">Visit the Fourthwall store <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
       </section>
 
       <section class="studio-section section-pad wrap" id="studio" aria-labelledby="studio-title">
@@ -599,7 +611,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=shorter-story';
+    target.search = '?v=same-hustle';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {

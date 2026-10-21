@@ -33,6 +33,8 @@ The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, ava
 
 The **Just412 Grind by Grace Hoodie** uses the supplied product photo and links directly to **https://just412-shop.fourthwall.com/products/just412-grind-by-grace-hoodie** from its photo, name, and “Shop this hoodie” button. Options, current prices, availability, and checkout remain in Fourthwall; the website does not synchronize inventory or display an unverified price.
 
+**Same Hustle, Different Weight** is also listed in the collection, with its name and shopping button linking to **https://just412-shop.fourthwall.com/products/same-hustle-different-weight**. It is currently a text listing. Justin supplied a photo in chat, but the uploaded image file has not become available in the workspace; the photo is pending a usable attachment or direct image address. No replacement product image has been generated. Both real hoodies appear in the Apparel filter.
+
 The tee and art print remain clearly labeled **design concepts**. To feature another real listing, supply its product image, name, and direct Fourthwall URL. No products, prices, reviews, stock counts, or checkout functionality are fabricated.
 
 To change the store address, replace `https://just412-shop.fourthwall.com/` in `index.html` and `about.html`. Keeping real href attributes makes the shop links work without JavaScript. The website never asks for a Fourthwall password or payment credentials.
