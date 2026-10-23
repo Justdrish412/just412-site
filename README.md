@@ -29,9 +29,9 @@ Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser
 
 ## Home-page background video
 
-The hero is prepared for a short Pittsburgh B-roll clip, using muted, inline, looping playback behind the existing text. Set `data-video-src` on the hero video in `index.html` to a local MP4 path once footage and its reuse terms have been verified. It is currently empty: no Pittsburgh film has been sourced or published. The bridge artwork remains visible, and no empty video request is sent.
+The hero uses `assets/pittsburgh-bridge-loop.mp4`, a 12-second silent pan-and-zoom animation made from the AI-generated Pittsburgh-inspired bridge artwork already created for this website. It is an animation of that artwork. It contains no stock footage or music. Source and rendering details are in `assets/pittsburgh-bridge-loop-source.md`; AI output is not guaranteed to be exclusive or legally copyright-free.
 
-When configured, the video has a Play/Pause button, pauses off screen and in background tabs, and starts only on request for visitors who prefer reduced motion or enable data saving. The existing image remains the fallback when playback fails, is blocked, or JavaScript is disabled. Keep source, creator and license details alongside the final video asset. Footage websites and web search engines are blocked from this workspace, so free-footage sourcing is still pending.
+The video plays muted and inline behind the opening text and loops smoothly. It has a Play/Pause button, pauses off screen and in background tabs, and starts only on request for visitors who prefer reduced motion or enable data saving. The existing image remains the fallback when playback fails, is blocked, or JavaScript is disabled. The MP4 is served locally with the site, with no paid player or external video service.
 
 ## Fourthwall
 
@@ -56,6 +56,8 @@ To change the store address, replace `https://just412-shop.fourthwall.com/` in `
 - `assets/justin-drish-pittsburgh.jpg`: the user-supplied black-and-white portrait in a Grind By Grace hoodie, copied unchanged and shown at its full proportions on the About Us page.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
+- `assets/pittsburgh-bridge-loop.mp4`: 12-second silent animation of the generated bridge artwork, 1280 × 640 H.264 at 24 frames per second.
+- `assets/pittsburgh-bridge-loop-source.md`: the animation’s source and rendering notes.
 - `assets/fonts/`: local Anton and DM Sans fonts, licenses, and source notes.
 - `favicon.svg`: a small matching 412 browser icon.
 
