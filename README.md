@@ -27,6 +27,12 @@ Future addition: a user-supplied family photo beside the family bio.
 
 Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser setting) and 1.8 line spacing on desktop and mobile. About Us body copy uses strong contrast, and mobile rules do not shrink the approved story’s paragraphs.
 
+## Home-page background video
+
+The hero is prepared for a short Pittsburgh B-roll clip, using muted, inline, looping playback behind the existing text. Set `data-video-src` on the hero video in `index.html` to a local MP4 path once footage and its reuse terms have been verified. It is currently empty: no Pittsburgh film has been sourced or published. The bridge artwork remains visible, and no empty video request is sent.
+
+When configured, the video has a Play/Pause button, pauses off screen and in background tabs, and starts only on request for visitors who prefer reduced motion or enable data saving. The existing image remains the fallback when playback fails, is blocked, or JavaScript is disabled. Keep source, creator and license details alongside the final video asset. Footage websites and web search engines are blocked from this workspace, so free-footage sourcing is still pending.
+
 ## Fourthwall
 
 The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, available products, prices, shipping, and order management live in that Fourthwall store.
