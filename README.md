@@ -29,7 +29,7 @@ Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser
 
 ## Home-page background video
 
-The hero uses `assets/pittsburgh-bridge-loop.mp4`, a 12-second silent pan-and-zoom animation made from the AI-generated Pittsburgh-inspired bridge artwork already created for this website. It is an animation of that artwork. It contains no stock footage or music. Source and rendering details are in `assets/pittsburgh-bridge-loop-source.md`; AI output is not guaranteed to be exclusive or legally copyright-free.
+The hero uses `assets/just412-city-model-montage.mp4`, a 24-second silent montage of Pittsburgh-inspired city artwork and two original AI model photos based on the real Just412 hoodies. Slow camera movements and soft crossfades connect the scenes, and the supplied Just412 logo appears briefly twice. The models are animated still photos, rather than footage of people actually walking. There are no rapid flashes, stock footage, or music. Source and rendering details are in `assets/just412-city-model-montage-source.md`; AI output is not guaranteed to be exclusive or legally copyright-free.
 
 The video plays muted and inline behind the opening text and loops smoothly. It has a Play/Pause button, pauses off screen and in background tabs, and starts only on request for visitors who prefer reduced motion or enable data saving. The existing image remains the fallback when playback fails, is blocked, or JavaScript is disabled. The MP4 is served locally with the site, with no paid player or external video service.
 
@@ -56,8 +56,10 @@ To change the store address, replace `https://just412-shop.fourthwall.com/` in `
 - `assets/justin-drish-pittsburgh.jpg`: the user-supplied black-and-white portrait in a Grind By Grace hoodie, copied unchanged and shown at its full proportions on the About Us page.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
-- `assets/pittsburgh-bridge-loop.mp4`: 12-second silent animation of the generated bridge artwork, 1280 × 640 H.264 at 24 frames per second.
-- `assets/pittsburgh-bridge-loop-source.md`: the animation’s source and rendering notes.
+- `assets/just412-city-model-montage.mp4`: active 24-second city/model/logo montage, 1280 × 720 H.264 at 24 frames per second, without audio.
+- `assets/just412-city-model-montage-source.md`: sources, AI model-image context, and rendering notes.
+- `assets/just412-grind-model-ai.png` and `assets/just412-hustle-model-ai.png`: generated campaign stills used in the montage; actual product listings retain the supplied photos.
+- `assets/pittsburgh-bridge-loop.mp4` and `assets/pittsburgh-bridge-loop-source.md`: previous 12-second city-only animation and its source notes, retained as an alternate.
 - `assets/fonts/`: local Anton and DM Sans fonts, licenses, and source notes.
 - `favicon.svg`: a small matching 412 browser icon.
 

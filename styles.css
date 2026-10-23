@@ -71,7 +71,7 @@ h2 { margin: 0; font-family: var(--display); font-size: clamp(42px, 5.1vw, 68px)
 .hero { position: relative; isolation: isolate; color: var(--paper); background: #24261e; overflow: hidden; }
 .hero-image, .hero-video, .hero-shade { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-image { object-fit: cover; object-position: center; z-index: -3; }
-.hero-video { object-fit: cover; object-position: center; z-index: -3; opacity: 0; pointer-events: none; }
+.hero-video { object-fit: cover; object-position: center top; z-index: -3; opacity: 0; pointer-events: none; }
 .hero-video.is-playing { opacity: 1; }
 .hero-shade { z-index: -2; background: linear-gradient(90deg, #10140ff2, #10140fab 43%, #10140f08 85%), linear-gradient(0deg, #10140fbb, transparent 48%); }
 .hero-content { position: relative; display: grid; grid-template-columns: 1.3fr .7fr; align-items: center; gap: 30px; min-height: 704px; padding-block: 78px 105px; }
@@ -306,7 +306,7 @@ h1 span { color: var(--gold-light); }
   .hero-content { display: block; min-height: 650px; padding-block: 70px 120px; }
   .hero.has-video-source .hero-content { padding-bottom: 180px; }
   .hero-image { object-position: 65% center; }
-  .hero-video { object-position: 65% center; }
+  .hero-video { object-position: 55% top; }
   .hero-shade { background: linear-gradient(90deg, #10140fe0, #10140f65), linear-gradient(0deg, #10140fc9, transparent 55%); }
   .hero-eyebrow { max-width: 340px; margin-bottom: 27px; font-size: 7px; letter-spacing: 1px; }
   h1 { font-size: clamp(76px, 16vw, 104px); letter-spacing: -1px; }
