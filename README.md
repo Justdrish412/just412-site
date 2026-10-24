@@ -39,7 +39,7 @@ The Shop buttons link to **https://just412-shop.fourthwall.com/**. Checkout, ava
 
 The **Just412 Grind by Grace Hoodie** uses the supplied product photo and links directly to **https://just412-shop.fourthwall.com/products/just412-grind-by-grace-hoodie** from its photo, name, and “Shop this hoodie” button. Options, current prices, availability, and checkout remain in Fourthwall; the website does not synchronize inventory or display an unverified price.
 
-**Same Hustle, Different Weight** uses Justin’s supplied product photo, copied unchanged, with its photo, name, and shopping button linking to **https://just412-shop.fourthwall.com/products/same-hustle-different-weight**. Both real hoodies appear first, side by side on desktop and stacked on phones; the two design concepts follow. The Apparel filter includes both hoodies and the tee concept. Current options, prices, availability, and checkout remain in Fourthwall.
+**Same Hustle, Different Weight** uses Justin’s supplied back-view product photo, copied unchanged, with its photo, name, and shopping button linking to **https://just412-shop.fourthwall.com/products/same-hustle-different-weight**. Both real hoodies appear first, side by side on desktop and stacked on phones; the two design concepts follow. The Apparel filter includes both hoodies and the tee concept. Current options, prices, availability, and checkout remain in Fourthwall.
 
 The tee and art print remain clearly labeled **design concepts**. To feature another real listing, supply its product image, name, and direct Fourthwall URL. No products, prices, reviews, stock counts, or checkout functionality are fabricated.
 
@@ -52,7 +52,7 @@ To change the store address, replace `https://just412-shop.fourthwall.com/` in `
 - `styles.css`: responsive layouts, local typography, and black-and-gold styling.
 - `script.js`: accessible mobile navigation, collection filters, and copyright year.
 - `assets/grind-by-grace-hoodie.jpg`: the user-supplied product photo, copied unchanged.
-- `assets/same-hustle-different-weight-hoodie.jpg`: the user-supplied Same Hustle, Different Weight product photo, copied unchanged.
+- `assets/same-hustle-different-weight-back.jpg`: the current user-supplied back-view Same Hustle, Different Weight product photo, copied unchanged. The earlier front-view photo is retained as an unused asset.
 - `assets/justin-drish-pittsburgh.jpg`: the user-supplied black-and-white portrait in a Grind By Grace hoodie, copied unchanged and shown at its full proportions on the About Us page.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
