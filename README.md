@@ -27,11 +27,13 @@ Future addition: a user-supplied family photo beside the family bio.
 
 Reading paragraphs use a consistent `1.25rem` size (20px at the standard browser setting) and 1.8 line spacing on desktop and mobile. About Us body copy uses strong contrast, and mobile rules do not shrink the approved story’s paragraphs.
 
-## Home-page city background
+## Home-page brand film
 
-The home hero currently uses the original static `assets/pittsburgh-bridge.png` Pittsburgh-inspired artwork. Justin rejected the moving model montage, its camera movement, and the white-backed logo overlays. The video, its control, and the separate cream logo card have been removed from the hero. The normal site-header logo remains.
+The hero uses `assets/just412-brand-film.mp4`, a 16-second silent loop edited from the user's uploaded drone footage and supplied clothing images. The aerial and clothing scenes are black and white, with brief exposure-flash cuts between them. The ending uses the existing transparent RGBA `assets/just412-logo.png` directly over the city footage, retaining its black and gold artwork. There is no white logo backing or separate hero logo card, and no artificial camera movement is added to the photos.
 
-Actual Pittsburgh B-roll is still pending. Stock-footage sites cannot be accessed from this cloud workspace, so no verified real-city clip has been downloaded. Do not describe the current static AI artwork as footage. Once a usable video file and its usage rights are available, the existing guarded player code and styles can support a muted, inline, looping background with a pause control and reduced-motion/data-saver fallbacks.
+The upload is only five seconds long, so portions appear between the clothing shots. The source scene's location and original licensing were not independently verified; do not attribute it to the previously discussed YouTube creator. Original uploads and source details are preserved in `assets/film-sources/` and `assets/just412-brand-film-source.md`.
+
+The video plays muted and inline, with Play/Pause controls, off-screen/background-tab pause, and manual playback for reduced-motion/data-saver preferences. `assets/just412-film-poster.jpg` is the matching static fallback. Playback is local with no paid service or external video player.
 
 ## Fourthwall
 
@@ -56,6 +58,10 @@ To change the store address, replace `https://just412-shop.fourthwall.com/` in `
 - `assets/justin-drish-pittsburgh.jpg`: the user-supplied black-and-white portrait in a Grind By Grace hoodie, copied unchanged and shown at its full proportions on the About Us page.
 - `assets/just412-logo.png`: transparent website asset prepared from the supplied logo.
 - `assets/pittsburgh-bridge.png`: generated Pittsburgh-inspired editorial artwork.
+- `assets/just412-brand-film.mp4`: active 16-second uploaded-footage/clothing film, silent H.264, 1280 × 720 at 30 fps.
+- `assets/just412-brand-film-source.md`: edit and source notes.
+- `assets/just412-film-poster.jpg`: static fallback extracted from the active film.
+- `assets/film-sources/`: unchanged user-supplied footage and clothing photos used in the active edit.
 - `assets/just412-city-model-montage.mp4`: rejected 24-second montage, retained locally as an unused revision; it is not shown on the website.
 - `assets/just412-city-model-montage-source.md`: sources, AI model-image context, and rendering notes.
 - `assets/just412-grind-model-ai.png` and `assets/just412-hustle-model-ai.png`: unused generated campaign stills from the rejected montage; actual product listings retain the supplied photos.
