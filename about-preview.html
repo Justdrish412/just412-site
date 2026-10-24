@@ -652,7 +652,7 @@ document.querySelector('#year').textContent = String(new Date().getFullYear());
     const target = new URL(link.dataset.previewPage, base.href);
     const fragment = target.hash;
     target.hash = '';
-    target.search = '?v=uploaded-brand-film';
+    target.search = '?v=city-only-drone';
     link.href = location.origin + location.pathname + '?' + target.href + fragment;
   });
   if (location.hash) {
