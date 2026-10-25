@@ -401,3 +401,9 @@ h1 span { color: var(--gold-light); }
   .button:hover, .product-card:hover .garment { transform: none; }
   .product-card:hover .art-frame { transform: rotate(5deg); }
 }
+
+/* Family photographs retain their full proportions at every screen size. */
+.family-photos { display: grid; gap: 28px; min-width: 0; }
+.family-photos figure { margin: 0; }
+.family-photos img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
+.family-photos figcaption { padding-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.8; }
