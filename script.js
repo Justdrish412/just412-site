@@ -40,6 +40,28 @@ if (heroVideo && videoToggle && heroVideo.dataset.videoSrc) {
   let inView = bounds.bottom > 0 && bounds.top < window.innerHeight;
   let wantsPlayback = !reducedMotion.matches && !navigator.connection?.saveData;
   let failed = false;
+  let loopFrame = null;
+
+  // Dissolve through the matching city poster to conceal the loop's hard cut.
+  function softenLoopBoundary() {
+    loopFrame = null;
+    if (heroVideo.paused || failed || reducedMotion.matches) return;
+    const duration = heroVideo.duration;
+    if (Number.isFinite(duration) && duration > 0) {
+      const fadeSeconds = Math.min(0.8, duration / 4);
+      const fade = Math.max(0, Math.min(1,
+        heroVideo.currentTime / fadeSeconds,
+        (duration - heroVideo.currentTime) / fadeSeconds));
+      // Smoothstep gives the dissolve a gentle start and finish.
+      heroVideo.style.opacity = String(fade * fade * (3 - 2 * fade));
+    }
+    loopFrame = requestAnimationFrame(softenLoopBoundary);
+  }
+
+  function stopLoopFrames() {
+    if (loopFrame !== null) cancelAnimationFrame(loopFrame);
+    loopFrame = null;
+  }
 
   heroVideo.muted = true;
   heroVideo.autoplay = false;
@@ -65,11 +87,18 @@ if (heroVideo && videoToggle && heroVideo.dataset.videoSrc) {
 
   heroVideo.addEventListener('playing', () => {
     heroVideo.classList.add('is-playing');
+    stopLoopFrames();
+    softenLoopBoundary();
     updateVideoToggle();
   });
-  heroVideo.addEventListener('pause', updateVideoToggle);
+  heroVideo.addEventListener('pause', () => {
+    stopLoopFrames();
+    updateVideoToggle();
+  });
   heroVideo.addEventListener('error', () => {
     failed = true;
+    stopLoopFrames();
+    heroVideo.style.removeProperty('opacity');
     heroVideo.classList.remove('is-playing');
     videoToggle.hidden = true;
     hero.classList.remove('has-video-source');
@@ -81,6 +110,8 @@ if (heroVideo && videoToggle && heroVideo.dataset.videoSrc) {
   reducedMotion.addEventListener('change', () => {
     wantsPlayback = false;
     heroVideo.pause();
+    stopLoopFrames();
+    heroVideo.style.removeProperty('opacity');
     heroVideo.classList.remove('is-playing');
   });
   document.addEventListener('visibilitychange', syncVideoPlayback);
