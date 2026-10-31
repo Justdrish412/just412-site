@@ -407,3 +407,12 @@ h1 span { color: var(--gold-light); }
 .family-photos figure { margin: 0; }
 .family-photos img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .family-photos figcaption { padding-top: 12px; color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+/* Expandable product views retain each supplied photograph in full. */
+.product-detail-photos { margin-top: 16px; border-top: 1px solid var(--line); }
+.product-detail-photos summary { padding-block: 14px; min-height: 44px; cursor: pointer; font-size: 12px; font-weight: 700; }
+.product-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; padding-bottom: 16px; }
+.product-detail-grid figure { margin: 0; min-width: 0; }
+.product-detail-grid figure:first-child { grid-column: 1 / -1; }
+.product-detail-grid img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: contain; background: #fff; }
+.product-detail-grid figcaption { padding-top: 8px; font-size: 12px; line-height: 1.6; color: var(--muted); }
