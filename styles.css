@@ -416,3 +416,6 @@ h1 span { color: var(--gold-light); }
 .product-detail-grid figure:first-child { grid-column: 1 / -1; }
 .product-detail-grid img { display: block; width: 100%; height: auto; max-height: 420px; object-fit: contain; background: #fff; }
 .product-detail-grid figcaption { padding-top: 8px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+
+/* Match the white backdrop of the Same Hustle product photo. */
+#same-hustle-different-weight .product-photo-link { background: #fff; }
