@@ -419,3 +419,36 @@ h1 span { color: var(--gold-light); }
 
 /* Match the white backdrop of the Same Hustle product photo. */
 #same-hustle-different-weight .product-photo-link { background: #fff; }
+
+/* Original campaign portraits overlap with feathered edges, never a hard seam. */
+.campaign-hero { background: #031b12; }
+.campaign-photos { position: absolute; inset: 0; z-index: -3; }
+.campaign-photos img { display: block; position: absolute; height: 100%; object-fit: cover; }
+.campaign-courtney { left: 0; width: 80%; object-position: 58% center; }
+.campaign-justin { right: 0; width: 38%; object-position: 50% 38%; -webkit-mask-image: linear-gradient(to right, transparent, #000 22%); mask-image: linear-gradient(to right, transparent, #000 22%); }
+.campaign-hero .hero-shade { background: linear-gradient(90deg, #02140fe8 0%, #02140fc2 23%, #02140f30 43%, transparent 58%), linear-gradient(0deg, #02140f88, transparent 25%); }
+.campaign-hero .hero-content { display: flex; align-items: center; min-height: clamp(680px, 56vw, 850px); padding-block: 65px 105px; }
+.campaign-hero .hero-copy { width: 37%; max-width: 480px; }
+.campaign-hero h1 { font-size: clamp(40px, 4.2vw, 64px); letter-spacing: -.5px; line-height: 1.08; }
+.campaign-hero .hero-description { font-size: 18px; line-height: 1.65; }
+.campaign-hero .hero-actions { gap: 16px; }
+.campaign-hero .hero-bottom { margin: 0; }
+@media (min-width: 761px) and (max-width: 1100px) {
+  .campaign-hero .hero-copy { width: 40%; }
+  .campaign-hero h1 { font-size: 42px; }
+  .campaign-hero .hero-description { font-size: 16px; }
+}
+@media (max-width: 760px) {
+  .campaign-hero { display: flex; flex-direction: column; }
+  .campaign-hero .hero-content { order: 0; min-height: 0; padding-block: 42px 36px; display: block; }
+  .campaign-hero .hero-copy { width: 100%; max-width: none; }
+  .campaign-hero h1 { font-size: clamp(36px, 8.5vw, 60px); }
+  .campaign-hero .hero-description { max-width: 520px; font-size: 18px; }
+  .campaign-hero .hero-eyebrow { margin-bottom: 18px; }
+  .campaign-hero .hero-actions { margin-top: 24px; gap: 16px 24px; }
+  .campaign-hero .hero-bottom, .campaign-hero .hero-shade { display: none; }
+  .campaign-photos { position: relative; inset: auto; z-index: 0; order: 1; }
+  .campaign-photos img { position: relative; height: auto; width: 100%; }
+  .campaign-courtney { object-position: center; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
+  .campaign-justin { margin-top: -7%; object-position: center; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%); mask-image: linear-gradient(to bottom, transparent, #000 12%); }
+}
