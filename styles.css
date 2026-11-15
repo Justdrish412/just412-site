@@ -452,3 +452,15 @@ h1 span { color: var(--gold-light); }
   .campaign-courtney { object-position: center; -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent); mask-image: linear-gradient(to bottom, #000 82%, transparent); }
   .campaign-justin { margin-top: -7%; object-position: center; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 12%); mask-image: linear-gradient(to bottom, transparent, #000 12%); }
 }
+
+/* Separate campaign portraits: Justin leads; Courtney follows the collection. */
+.campaign-hero .campaign-justin { width: 60%; -webkit-mask-image: linear-gradient(to right, transparent, #000 26%); mask-image: linear-gradient(to right, transparent, #000 26%); object-position: 50% 35%; }
+.campaign-hero .hero-copy { width: 40%; }
+.courtney-feature { margin-block: 0; }
+.courtney-feature > img { display: block; width: 100%; height: auto; }
+.courtney-feature figcaption { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; border-bottom: 1px solid var(--line); font-size: 12px; line-height: 1.7; }
+@media (max-width: 760px) {
+  .campaign-hero .hero-copy { width: 100%; }
+  .campaign-hero .campaign-justin { width: 100%; margin-top: 0; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 10%); mask-image: linear-gradient(to bottom, transparent, #000 10%); }
+  .courtney-feature figcaption { flex-wrap: wrap; gap: 4px 16px; }
+}
