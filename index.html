@@ -10,7 +10,15 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/fonts/anton-latin.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="assets/fonts/dm-sans-latin.woff" as="font" type="font/woff" crossorigin>
-    <link rel="stylesheet" href="styles.css?v=campaign-fit-2">
+    <link rel="stylesheet" href="styles.css?v=campaign-fullwidth-3">
+    <style>
+      /* Keep campaign photos fitted while cached stylesheets refresh. */
+      .courtney-feature > img { display: block; width: 100%; max-width: 100%; height: auto; }
+      @media (max-width: 760px) {
+        .campaign-hero .campaign-photos { position: relative; inset: auto; width: 100%; }
+        .campaign-hero .campaign-photos .campaign-justin { position: relative; right: auto; display: block; width: 100%; max-width: 100%; height: auto; margin: 0; }
+      }
+    </style>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -117,9 +125,9 @@
         <div class="shop-note" id="shop-status"><p>Shop the hoodies and tees on Fourthwall for options, current pricing, and checkout.</p><a class="button button-dark" data-store-link href="https://just412-shop.fourthwall.com/">Shop Just412 Store <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></div>
       </section>
 
-      <figure class="courtney-feature wrap">
+      <figure class="courtney-feature" style="width: 100%; max-width: 100%; margin: 0;">
         <img src="assets/just412-courtney-campaign.jpg" alt="Courtney wearing a green Just412 hoodie beside a campfire" width="1280" height="720" loading="lazy" style="display: block; width: 100%; max-width: 100%; height: auto;">
-        <figcaption><span>Courtney / The people behind Just412</span><a class="text-link" href="about.html#our-family">Meet our family <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></figcaption>
+        <figcaption class="wrap"><span>Courtney / The people behind Just412</span><a class="text-link" href="about.html#our-family">Meet our family <svg class="arrow-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg></a></figcaption>
       </figure>
 
       <section class="studio-section section-pad wrap" id="studio" aria-labelledby="studio-title">
